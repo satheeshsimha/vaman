@@ -1,0 +1,5 @@
+\contentsline {section}{\numberline {1}Components}{1}{section.1}%
+\contentsline {section}{\numberline {2}\textbf {The Assignment}}{1}{section.2}%
+\contentsline {section}{\numberline {3}\textbf {Realization of JK flip flop using D flip flop}}{2}{section.3}%
+\contentsline {section}{\numberline {4}\textbf {Finite State Machine}}{2}{section.4}%
+\contentsline {section}{\numberline {5}\textbf {Implementation Details}}{3}{section.5}%
