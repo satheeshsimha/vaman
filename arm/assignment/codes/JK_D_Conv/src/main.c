@@ -90,7 +90,7 @@ int main(void)
     while(1)
     {
         PyHal_GPIO_Set(8,1);//Clock set to high
-	HAL_DelayUSec(1000000); //1 Sec Delay
+	HAL_DelayUSec(500000); //1 Sec Delay
 
 
     	//Combinational Logic to generate the required sequence 
@@ -100,7 +100,7 @@ int main(void)
         write_output(A,B,C,D); 
 
         PyHal_GPIO_Set(8,0);//Clock set to low
-	HAL_DelayUSec(1000000); //1 Sec Delay
+	HAL_DelayUSec(500000); //1 Sec Delay
 
     	//read input
     	W = PyHal_GPIO_Get(28);  

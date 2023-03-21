@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<block name="helloworldfpga.net" instance="FPGA_packed_netlist[0]" architecture_id="SHA256:ff45ae019adfd8ddc9651aa485da7d1cc80afac7f587a182516f1773344b8923" atom_netlist_id="SHA256:2a795d23e23c83d2258df2ca0474c4b50994e80ae4592c52ae0426ee81480fc1">
+<block name="helloworldfpga.net" instance="FPGA_packed_netlist[0]" architecture_id="SHA256:ff45ae019adfd8ddc9651aa485da7d1cc80afac7f587a182516f1773344b8923" atom_netlist_id="SHA256:43ae53d1d4b9e5e36b91da39a13fa40b0990370099b3f1d7cb092b5bd141d440">
 	<inputs></inputs>
 	<outputs>out:a out:b out:c out:d out:e out:f out:g</outputs>
 	<clocks></clocks>
@@ -55,7 +55,7 @@
 				</clocks>
 				<block name="$iopadmap$helloworldfpga.a" instance="bidir[0]">
 					<attributes>
-						<attribute name="src">"/root/symbiflow/quicklogic-arch-defs/share/techmaps/quicklogic/pp3/techmap/cells_map.v:81.9-88.8"</attribute>
+						<attribute name="src">"/data/data/com.termux/files/home/symbiflow/quicklogic-arch-defs/share/techmaps/quicklogic/pp3/techmap/cells_map.v:81.9-88.8"</attribute>
 						<attribute name="module_not_derived">00000000000000000000000000000001</attribute>
 					</attributes>
 					<parameters>
@@ -141,7 +141,7 @@
 				</clocks>
 				<block name="$iopadmap$helloworldfpga.b" instance="bidir[0]">
 					<attributes>
-						<attribute name="src">"/root/symbiflow/quicklogic-arch-defs/share/techmaps/quicklogic/pp3/techmap/cells_map.v:81.9-88.8"</attribute>
+						<attribute name="src">"/data/data/com.termux/files/home/symbiflow/quicklogic-arch-defs/share/techmaps/quicklogic/pp3/techmap/cells_map.v:81.9-88.8"</attribute>
 						<attribute name="module_not_derived">00000000000000000000000000000001</attribute>
 					</attributes>
 					<parameters>
@@ -227,7 +227,7 @@
 				</clocks>
 				<block name="$iopadmap$helloworldfpga.c" instance="bidir[0]">
 					<attributes>
-						<attribute name="src">"/root/symbiflow/quicklogic-arch-defs/share/techmaps/quicklogic/pp3/techmap/cells_map.v:81.9-88.8"</attribute>
+						<attribute name="src">"/data/data/com.termux/files/home/symbiflow/quicklogic-arch-defs/share/techmaps/quicklogic/pp3/techmap/cells_map.v:81.9-88.8"</attribute>
 						<attribute name="module_not_derived">00000000000000000000000000000001</attribute>
 					</attributes>
 					<parameters>
@@ -313,7 +313,7 @@
 				</clocks>
 				<block name="$iopadmap$helloworldfpga.d" instance="bidir[0]">
 					<attributes>
-						<attribute name="src">"/root/symbiflow/quicklogic-arch-defs/share/techmaps/quicklogic/pp3/techmap/cells_map.v:81.9-88.8"</attribute>
+						<attribute name="src">"/data/data/com.termux/files/home/symbiflow/quicklogic-arch-defs/share/techmaps/quicklogic/pp3/techmap/cells_map.v:81.9-88.8"</attribute>
 						<attribute name="module_not_derived">00000000000000000000000000000001</attribute>
 					</attributes>
 					<parameters>
@@ -399,7 +399,7 @@
 				</clocks>
 				<block name="$iopadmap$helloworldfpga.e" instance="bidir[0]">
 					<attributes>
-						<attribute name="src">"/root/symbiflow/quicklogic-arch-defs/share/techmaps/quicklogic/pp3/techmap/cells_map.v:81.9-88.8"</attribute>
+						<attribute name="src">"/data/data/com.termux/files/home/symbiflow/quicklogic-arch-defs/share/techmaps/quicklogic/pp3/techmap/cells_map.v:81.9-88.8"</attribute>
 						<attribute name="module_not_derived">00000000000000000000000000000001</attribute>
 					</attributes>
 					<parameters>
@@ -485,7 +485,7 @@
 				</clocks>
 				<block name="$iopadmap$helloworldfpga.f" instance="bidir[0]">
 					<attributes>
-						<attribute name="src">"/root/symbiflow/quicklogic-arch-defs/share/techmaps/quicklogic/pp3/techmap/cells_map.v:81.9-88.8"</attribute>
+						<attribute name="src">"/data/data/com.termux/files/home/symbiflow/quicklogic-arch-defs/share/techmaps/quicklogic/pp3/techmap/cells_map.v:81.9-88.8"</attribute>
 						<attribute name="module_not_derived">00000000000000000000000000000001</attribute>
 					</attributes>
 					<parameters>
@@ -571,7 +571,7 @@
 				</clocks>
 				<block name="$iopadmap$helloworldfpga.g" instance="bidir[0]">
 					<attributes>
-						<attribute name="src">"/root/symbiflow/quicklogic-arch-defs/share/techmaps/quicklogic/pp3/techmap/cells_map.v:81.9-88.8"</attribute>
+						<attribute name="src">"/data/data/com.termux/files/home/symbiflow/quicklogic-arch-defs/share/techmaps/quicklogic/pp3/techmap/cells_map.v:81.9-88.8"</attribute>
 						<attribute name="module_not_derived">00000000000000000000000000000001</attribute>
 					</attributes>
 					<parameters>

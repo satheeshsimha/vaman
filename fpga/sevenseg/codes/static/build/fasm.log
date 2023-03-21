@@ -1,8 +1,8 @@
 VPR FPGA Placement and Routing.
 Version: 8.1.0-dev+dadca7ecf
-Revision: v8.0.0-rc2-2894-gdadca7ecf
-Compiled: 2021-01-14T13:13:16
-Compiler: GNU 9.3.0 on Linux-5.4.0-faked aarch64
+Revision: v8.0.0-rc2-2909-gdadca7ecf
+Compiled: 2023-03-16T05:56:59
+Compiler: GNU 10.2.1 on Linux-5.4.0-faked aarch64
 Build Info: release IPO VTR_ASSERT_LEVEL=2
 
 University of Toronto
@@ -11,18 +11,18 @@ vtr-users@googlegroups.com
 This is free open source code under MIT license.
 
 VPR was run with the following command-line:
-genfasm /root/symbiflow/quicklogic-arch-defs/share/arch/ql-eos-s3_wlcsp/arch.timing.xml helloworldfpga.eblif --device ql-eos-s3 --max_router_iterations 500 --routing_failure_predictor off --router_high_fanout_threshold -1 --constant_net_method route --route_chan_width 100 --clock_modeling route --place_delay_model delta_override --router_lookahead map --check_route quick --strict_checks off --allow_dangling_combinational_nodes on --disable_errors check_unbuffered_edges:check_route --congested_routing_iteration_threshold 0.8 --incremental_reroute_delay_ripup off --base_cost_type delay_normalized_length_bounded --bb_factor 10 --initial_pres_fac 4.0 --check_rr_graph off --suppress_warnings ,sum_pin_class:check_unbuffered_edges:load_rr_indexed_data_T_values:check_rr_node:trans_per_R:check_route:set_rr_graph_tool_comment:warn_model_missing_timing --read_rr_graph /root/symbiflow/quicklogic-arch-defs/share/arch/ql-eos-s3_wlcsp/rr_graph_ql-eos-s3_wlcsp.rr_graph.real.bin
+genfasm /data/data/com.termux/files/home/symbiflow/quicklogic-arch-defs/share/arch/ql-eos-s3_wlcsp/arch.timing.xml helloworldfpga.eblif --device ql-eos-s3 --max_router_iterations 500 --routing_failure_predictor off --router_high_fanout_threshold -1 --constant_net_method route --route_chan_width 100 --clock_modeling route --place_delay_model delta_override --router_lookahead map --check_route quick --strict_checks off --allow_dangling_combinational_nodes on --disable_errors check_unbuffered_edges:check_route --congested_routing_iteration_threshold 0.8 --incremental_reroute_delay_ripup off --base_cost_type delay_normalized_length_bounded --bb_factor 10 --initial_pres_fac 4.0 --check_rr_graph off --suppress_warnings ,sum_pin_class:check_unbuffered_edges:load_rr_indexed_data_T_values:check_rr_node:trans_per_R:check_route:set_rr_graph_tool_comment:warn_model_missing_timing --read_rr_graph /data/data/com.termux/files/home/symbiflow/quicklogic-arch-defs/share/arch/ql-eos-s3_wlcsp/rr_graph_ql-eos-s3_wlcsp.rr_graph.real.bin
 
 
-Architecture file: /root/symbiflow/quicklogic-arch-defs/share/arch/ql-eos-s3_wlcsp/arch.timing.xml
+Architecture file: /data/data/com.termux/files/home/symbiflow/quicklogic-arch-defs/share/arch/ql-eos-s3_wlcsp/arch.timing.xml
 Circuit name: helloworldfpga
 
 Loading Architecture Description
-Loading Architecture Description took 0.42 seconds (max_rss 26.5 MiB, delta_rss +23.2 MiB)
+Loading Architecture Description took 0.99 seconds (max_rss 27.0 MiB, delta_rss +23.2 MiB)
 Building complex block graph
-Building complex block graph took 0.09 seconds (max_rss 33.2 MiB, delta_rss +6.7 MiB)
+Building complex block graph took 0.27 seconds (max_rss 33.9 MiB, delta_rss +6.9 MiB)
 Load circuit
-Load circuit took 0.00 seconds (max_rss 33.2 MiB, delta_rss +0.0 MiB)
+Load circuit took 0.01 seconds (max_rss 33.9 MiB, delta_rss +0.0 MiB)
 Clean circuit
 Absorbed 0 LUT buffers
 Inferred    3 additional primitive pins as constant generators since they have no combinationally connected inputs
@@ -36,11 +36,11 @@ Swept output(s)     : 0 (0 dangling, 0 constant)
 Swept net(s)        : 1
 Swept block(s)      : 1
 Constant Pins Marked: 10
-Clean circuit took 0.00 seconds (max_rss 33.2 MiB, delta_rss +0.0 MiB)
+Clean circuit took 0.00 seconds (max_rss 33.9 MiB, delta_rss +0.0 MiB)
 Compress circuit
-Compress circuit took 0.00 seconds (max_rss 33.2 MiB, delta_rss +0.0 MiB)
+Compress circuit took 0.00 seconds (max_rss 33.9 MiB, delta_rss +0.0 MiB)
 Verify circuit
-Verify circuit took 0.00 seconds (max_rss 33.2 MiB, delta_rss +0.0 MiB)
+Verify circuit took 0.00 seconds (max_rss 33.9 MiB, delta_rss +0.0 MiB)
 Circuit Statistics:
   Blocks: 16
     .output   :       7
@@ -56,7 +56,7 @@ Build Timing Graph
   Timing Graph Nodes: 37
   Timing Graph Edges: 42
   Timing Graph Levels: 4
-Build Timing Graph took 0.00 seconds (max_rss 33.2 MiB, delta_rss +0.0 MiB)
+Build Timing Graph took 0.00 seconds (max_rss 33.9 MiB, delta_rss +0.0 MiB)
 Netlist contains 0 clocks
 Load Timing Constraints
 
@@ -67,7 +67,7 @@ Setting default timing constraints:
 Timing constraints created 1 clocks
   Constrained Clock 'virtual_io_clock' (Virtual Clock)
 
-Load Timing Constraints took 0.00 seconds (max_rss 33.2 MiB, delta_rss +0.0 MiB)
+Load Timing Constraints took 0.00 seconds (max_rss 33.9 MiB, delta_rss +0.0 MiB)
 Timing analysis: ON
 Circuit netlist file: helloworldfpga.net
 Circuit placement file: helloworldfpga.place
@@ -183,8 +183,8 @@ Load Packing
 Begin loading packed FPGA netlist file.
 Netlist generated from file 'helloworldfpga.net'.
 Detected 2 constant generators (to see names run with higher pack verbosity)
-Finished loading packed FPGA netlist file (took 0.00701 seconds).
-Load Packing took 0.01 seconds (max_rss 33.4 MiB, delta_rss +0.2 MiB)
+Finished loading packed FPGA netlist file (took 0.019085 seconds).
+Load Packing took 0.03 seconds (max_rss 34.3 MiB, delta_rss +0.4 MiB)
 Warning 1: Netlist contains 0 global net to non-global architecture pin connections
 Warning 2: Logic block #7 ($false) has only 1 output pin '$false.GND0_GND[0]'. It may be a constant generator.
 Warning 3: Logic block #8 ($true) has only 1 output pin '$true.VCC0_VCC[0]'. It may be a constant generator.
@@ -285,26 +285,26 @@ Device Utilization: 0.01 (target 1.00)
 	Physical Tile TL-SYN_GND:
 	Block Utilization: 1.00 Logical Block: PB-SYN_GND
 
-# Build Device Grid took 0.01 seconds (max_rss 33.5 MiB, delta_rss +0.0 MiB)
+# Build Device Grid took 0.02 seconds (max_rss 34.4 MiB, delta_rss +0.0 MiB)
 # Loading routing resource graph
 
 
-# Loading routing resource graph took 1.10 seconds (max_rss 464.3 MiB, delta_rss +430.8 MiB)
+# Loading routing resource graph took 2.42 seconds (max_rss 465.0 MiB, delta_rss +430.7 MiB)
   RR Graph Nodes: 1396446
   RR Graph Edges: 2337988
-Create Device took 2.31 seconds (max_rss 511.9 MiB, delta_rss +478.4 MiB)
+Create Device took 5.77 seconds (max_rss 512.6 MiB, delta_rss +478.2 MiB)
 
 Load Placement
 Reading helloworldfpga.place.
 
 Successfully read helloworldfpga.place.
 
-Load Placement took 0.00 seconds (max_rss 511.9 MiB, delta_rss +0.0 MiB)
+Load Placement took 0.00 seconds (max_rss 512.6 MiB, delta_rss +0.0 MiB)
 
 Load Routing
 Begin loading FPGA routing file.
 Finished loading route file
-Load Routing took 0.04 seconds (max_rss 511.9 MiB, delta_rss +0.0 MiB)
+Load Routing took 0.09 seconds (max_rss 512.6 MiB, delta_rss +0.0 MiB)
 
 Checking to ensure routing is legal...
 Completed routing consistency check successfully.
@@ -312,10 +312,10 @@ Completed routing consistency check successfully.
 Serial number (magic cookie) for the routing is: -1953990
 Circuit successfully routed with a channel width factor of 100.
 
-Incr Slack updates 1 in 8.281e-06 sec
-Full Max Req/Worst Slack updates 1 in 3.281e-06 sec
+Incr Slack updates 1 in 1.3334e-05 sec
+Full Max Req/Worst Slack updates 1 in 9.3698e-05 sec
 Incr Max Req/Worst Slack updates 0 in 0 sec
 Incr Criticality updates 0 in 0 sec
-Full Criticality updates 1 in 2.916e-06 sec
+Full Criticality updates 1 in 6.927e-06 sec
 Writing Implementation FASM: helloworldfpga.fasm
-The entire flow of VPR took 2.83362 seconds.
+The entire flow of VPR took 7.06093 seconds.

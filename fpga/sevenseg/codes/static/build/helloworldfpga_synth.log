@@ -19,25 +19,25 @@
  |                                                                            |
  \----------------------------------------------------------------------------/
 
- Yosys 0.9+2406 (git sha1 ca763e6d, gcc 9.3.0-17ubuntu1~20.04 -fPIC -Os)
+ Yosys 0.9+2406 (git sha1 ca763e6d5, gcc 10.2.1-6 -fPIC -Os)
 
 
--- Parsing `/storage/emulated/0/github/vaman/sevenseg/codes/static/sevenseg_dec.v' using frontend `verilog' --
+-- Parsing `/sdcard/Download/vaman/vaman/fpga/sevenseg/codes/static/sevenseg_dec.v' using frontend `verilog' --
 
-1. Executing Verilog-2005 frontend: /storage/emulated/0/github/vaman/sevenseg/codes/static/sevenseg_dec.v
-Parsing Verilog input from `/storage/emulated/0/github/vaman/sevenseg/codes/static/sevenseg_dec.v' to AST representation.
+1. Executing Verilog-2005 frontend: /sdcard/Download/vaman/vaman/fpga/sevenseg/codes/static/sevenseg_dec.v
+Parsing Verilog input from `/sdcard/Download/vaman/vaman/fpga/sevenseg/codes/static/sevenseg_dec.v' to AST representation.
 Generating RTLIL representation for module `\helloworldfpga'.
 Successfully finished Verilog frontend.
 
--- Running command `tcl /root/symbiflow/quicklogic-arch-defs/share/quicklogic/synth.tcl' --
+-- Running command `tcl /data/data/com.termux/files/home/symbiflow/quicklogic-arch-defs/share/quicklogic/synth.tcl' --
 [TCL: yosys -import] Command name collision: found pre-existing command `cd' -> skip.
 [TCL: yosys -import] Command name collision: found pre-existing command `eval' -> skip.
 [TCL: yosys -import] Command name collision: found pre-existing command `exec' -> skip.
 [TCL: yosys -import] Command name collision: found pre-existing command `read' -> skip.
 [TCL: yosys -import] Command name collision: found pre-existing command `trace' -> skip.
 
-2. Executing Verilog-2005 frontend: /root/symbiflow/quicklogic-arch-defs/share/techmaps/quicklogic/pp3/techmap/cells_sim.v
-Parsing Verilog input from `/root/symbiflow/quicklogic-arch-defs/share/techmaps/quicklogic/pp3/techmap/cells_sim.v' to AST representation.
+2. Executing Verilog-2005 frontend: /data/data/com.termux/files/home/symbiflow/quicklogic-arch-defs/share/techmaps/quicklogic/pp3/techmap/cells_sim.v
+Parsing Verilog input from `/data/data/com.termux/files/home/symbiflow/quicklogic-arch-defs/share/techmaps/quicklogic/pp3/techmap/cells_sim.v' to AST representation.
 Generating RTLIL representation for module `\VCC'.
 Generating RTLIL representation for module `\GND'.
 Generating RTLIL representation for module `\fpga_interconnect'.
@@ -55,8 +55,8 @@ Generating RTLIL representation for module `\GMUX_IP'.
 Generating RTLIL representation for module `\GMUX_IC'.
 Successfully finished Verilog frontend.
 
-3. Executing Verilog-2005 frontend: /root/symbiflow/quicklogic-arch-defs/bin/../share/arch/ql-eos-s3_wlcsp/cells/ram_sim.v
-Parsing Verilog input from `/root/symbiflow/quicklogic-arch-defs/bin/../share/arch/ql-eos-s3_wlcsp/cells/ram_sim.v' to AST representation.
+3. Executing Verilog-2005 frontend: /data/data/com.termux/files/home/symbiflow/quicklogic-arch-defs/bin/../share/arch/ql-eos-s3_wlcsp/cells/ram_sim.v
+Parsing Verilog input from `/data/data/com.termux/files/home/symbiflow/quicklogic-arch-defs/bin/../share/arch/ql-eos-s3_wlcsp/cells/ram_sim.v' to AST representation.
 Generating RTLIL representation for module `\RAM_CE0_FE0_PR0_WSA0_WSB0_VPR'.
 Generating RTLIL representation for module `\RAM_CE0_FE0_PR0_WSA0_WSB1_VPR'.
 Generating RTLIL representation for module `\RAM_CE0_FE0_PR0_WSA1_WSB0_VPR'.
@@ -139,8 +139,8 @@ Successfully finished Verilog frontend.
 
 4. Executing SYNTH_QUICKLOGIC pass.
 
-4.1. Executing Verilog-2005 frontend: /share/yosys/quicklogic/cells_sim.v
-Parsing Verilog input from `/share/yosys/quicklogic/cells_sim.v' to AST representation.
+4.1. Executing Verilog-2005 frontend: /data/data/com.termux/files/home/symbiflow/bin/../share/yosys/quicklogic/cells_sim.v
+Parsing Verilog input from `/data/data/com.termux/files/home/symbiflow/bin/../share/yosys/quicklogic/cells_sim.v' to AST representation.
 Generating RTLIL representation for module `\inv'.
 Generating RTLIL representation for module `\buff'.
 Generating RTLIL representation for module `\logic_0'.
@@ -148,8 +148,8 @@ Generating RTLIL representation for module `\logic_1'.
 Generating RTLIL representation for module `\gclkbuff'.
 Successfully finished Verilog frontend.
 
-4.2. Executing Verilog-2005 frontend: /share/yosys/quicklogic/pp3_cells_sim.v
-Parsing Verilog input from `/share/yosys/quicklogic/pp3_cells_sim.v' to AST representation.
+4.2. Executing Verilog-2005 frontend: /data/data/com.termux/files/home/symbiflow/bin/../share/yosys/quicklogic/pp3_cells_sim.v
+Parsing Verilog input from `/data/data/com.termux/files/home/symbiflow/bin/../share/yosys/quicklogic/pp3_cells_sim.v' to AST representation.
 Generating RTLIL representation for module `\LUT1'.
 Generating RTLIL representation for module `\LUT2'.
 Generating RTLIL representation for module `\LUT3'.
@@ -181,7 +181,7 @@ Generating RTLIL representation for module `\qlal4s3b_cell_macro_bfm'.
 Generating RTLIL representation for module `\qlal4s3b_cell_macro'.
 Generating RTLIL representation for module `\fifo_controller_model'.
 Generating RTLIL representation for module `\ram'.
-Warning: Replacing memory \ram with list of registers. See /share/yosys/quicklogic/pp3_cells_sim.v:3671, /share/yosys/quicklogic/pp3_cells_sim.v:3585, /share/yosys/quicklogic/pp3_cells_sim.v:3560
+Warning: Replacing memory \ram with list of registers. See /data/data/com.termux/files/home/symbiflow/bin/../share/yosys/quicklogic/pp3_cells_sim.v:3671, /data/data/com.termux/files/home/symbiflow/bin/../share/yosys/quicklogic/pp3_cells_sim.v:3585, /data/data/com.termux/files/home/symbiflow/bin/../share/yosys/quicklogic/pp3_cells_sim.v:3560
 Generating RTLIL representation for module `\x2_model'.
 Generating RTLIL representation for module `\ram_block_8K'.
 Generating RTLIL representation for module `\sw_mux'.
@@ -214,12 +214,12 @@ Removed 0 unused modules.
 4.4. Executing PROC pass (convert processes to netlists).
 
 4.4.1. Executing PROC_CLEAN pass (remove empty switches from decision trees).
-Found and cleaned up 1 empty switch in `\helloworldfpga.$proc$/storage/emulated/0/github/vaman/sevenseg/codes/static/sevenseg_dec.v:0$3'.
+Found and cleaned up 1 empty switch in `\helloworldfpga.$proc$/sdcard/Download/vaman/vaman/fpga/sevenseg/codes/static/sevenseg_dec.v:0$3'.
 Cleaned up 1 empty switch.
 
 4.4.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
-Marked 1 switch rules as full_case in process $proc$/root/symbiflow/quicklogic-arch-defs/share/techmaps/quicklogic/pp3/techmap/cells_sim.v:4781$42 in module MULT.
-Marked 2 switch rules as full_case in process $proc$/root/symbiflow/quicklogic-arch-defs/share/techmaps/quicklogic/pp3/techmap/cells_sim.v:242$24 in module Q_FRAG.
+Marked 1 switch rules as full_case in process $proc$/data/data/com.termux/files/home/symbiflow/quicklogic-arch-defs/share/techmaps/quicklogic/pp3/techmap/cells_sim.v:4781$42 in module MULT.
+Marked 2 switch rules as full_case in process $proc$/data/data/com.termux/files/home/symbiflow/quicklogic-arch-defs/share/techmaps/quicklogic/pp3/techmap/cells_sim.v:242$24 in module Q_FRAG.
 Removed a total of 0 dead cases.
 
 4.4.3. Executing PROC_PRUNE pass (remove redundant assignments in processes).
@@ -227,41 +227,41 @@ Removed 0 redundant assignments.
 Promoted 5 assignments to connections.
 
 4.4.4. Executing PROC_INIT pass (extract init attributes).
-Found init rule in `\Q_FRAG.$proc$/root/symbiflow/quicklogic-arch-defs/share/techmaps/quicklogic/pp3/techmap/cells_sim.v:0$25'.
+Found init rule in `\Q_FRAG.$proc$/data/data/com.termux/files/home/symbiflow/quicklogic-arch-defs/share/techmaps/quicklogic/pp3/techmap/cells_sim.v:0$25'.
   Set init value: \QZ = 1'0
 
 4.4.5. Executing PROC_ARST pass (detect async resets in processes).
-Found async reset \QST in `\Q_FRAG.$proc$/root/symbiflow/quicklogic-arch-defs/share/techmaps/quicklogic/pp3/techmap/cells_sim.v:242$24'.
-Found async reset \QRT in `\Q_FRAG.$proc$/root/symbiflow/quicklogic-arch-defs/share/techmaps/quicklogic/pp3/techmap/cells_sim.v:242$24'.
+Found async reset \QST in `\Q_FRAG.$proc$/data/data/com.termux/files/home/symbiflow/quicklogic-arch-defs/share/techmaps/quicklogic/pp3/techmap/cells_sim.v:242$24'.
+Found async reset \QRT in `\Q_FRAG.$proc$/data/data/com.termux/files/home/symbiflow/quicklogic-arch-defs/share/techmaps/quicklogic/pp3/techmap/cells_sim.v:242$24'.
 
 4.4.6. Executing PROC_MUX pass (convert decision trees to multiplexers).
-Creating decoders for process `\MULT.$proc$/root/symbiflow/quicklogic-arch-defs/share/techmaps/quicklogic/pp3/techmap/cells_sim.v:4781$42'.
+Creating decoders for process `\MULT.$proc$/data/data/com.termux/files/home/symbiflow/quicklogic-arch-defs/share/techmaps/quicklogic/pp3/techmap/cells_sim.v:4781$42'.
      1/2: $0\Cmult[63:0] [63:32]
      2/2: $0\Cmult[63:0] [31:0]
-Creating decoders for process `\Q_FRAG.$proc$/root/symbiflow/quicklogic-arch-defs/share/techmaps/quicklogic/pp3/techmap/cells_sim.v:0$25'.
-Creating decoders for process `\Q_FRAG.$proc$/root/symbiflow/quicklogic-arch-defs/share/techmaps/quicklogic/pp3/techmap/cells_sim.v:242$24'.
+Creating decoders for process `\Q_FRAG.$proc$/data/data/com.termux/files/home/symbiflow/quicklogic-arch-defs/share/techmaps/quicklogic/pp3/techmap/cells_sim.v:0$25'.
+Creating decoders for process `\Q_FRAG.$proc$/data/data/com.termux/files/home/symbiflow/quicklogic-arch-defs/share/techmaps/quicklogic/pp3/techmap/cells_sim.v:242$24'.
      1/1: $0\QZ[0:0]
-Creating decoders for process `\helloworldfpga.$proc$/storage/emulated/0/github/vaman/sevenseg/codes/static/sevenseg_dec.v:0$3'.
+Creating decoders for process `\helloworldfpga.$proc$/sdcard/Download/vaman/vaman/fpga/sevenseg/codes/static/sevenseg_dec.v:0$3'.
 
 4.4.7. Executing PROC_DLATCH pass (convert process syncs to latches).
-No latch inferred for signal `\helloworldfpga.$func$\gpio_out$/storage/emulated/0/github/vaman/sevenseg/codes/static/sevenseg_dec.v:47$1$\gpio_out' from process `\helloworldfpga.$proc$/storage/emulated/0/github/vaman/sevenseg/codes/static/sevenseg_dec.v:0$3'.
-No latch inferred for signal `\helloworldfpga.$func$\gpio_out$/storage/emulated/0/github/vaman/sevenseg/codes/static/sevenseg_dec.v:47$2$\gpio_out' from process `\helloworldfpga.$proc$/storage/emulated/0/github/vaman/sevenseg/codes/static/sevenseg_dec.v:0$3'.
-No latch inferred for signal `\helloworldfpga.$func$\gpio_out$/storage/emulated/0/github/vaman/sevenseg/codes/static/sevenseg_dec.v:47$2$\num_i' from process `\helloworldfpga.$proc$/storage/emulated/0/github/vaman/sevenseg/codes/static/sevenseg_dec.v:0$3'.
+No latch inferred for signal `\helloworldfpga.$func$\gpio_out$/sdcard/Download/vaman/vaman/fpga/sevenseg/codes/static/sevenseg_dec.v:46$1$\gpio_out' from process `\helloworldfpga.$proc$/sdcard/Download/vaman/vaman/fpga/sevenseg/codes/static/sevenseg_dec.v:0$3'.
+No latch inferred for signal `\helloworldfpga.$func$\gpio_out$/sdcard/Download/vaman/vaman/fpga/sevenseg/codes/static/sevenseg_dec.v:46$2$\gpio_out' from process `\helloworldfpga.$proc$/sdcard/Download/vaman/vaman/fpga/sevenseg/codes/static/sevenseg_dec.v:0$3'.
+No latch inferred for signal `\helloworldfpga.$func$\gpio_out$/sdcard/Download/vaman/vaman/fpga/sevenseg/codes/static/sevenseg_dec.v:46$2$\num_i' from process `\helloworldfpga.$proc$/sdcard/Download/vaman/vaman/fpga/sevenseg/codes/static/sevenseg_dec.v:0$3'.
 
 4.4.8. Executing PROC_DFF pass (convert process syncs to FFs).
-Creating register for signal `\MULT.\Cmult' using process `\MULT.$proc$/root/symbiflow/quicklogic-arch-defs/share/techmaps/quicklogic/pp3/techmap/cells_sim.v:4781$42'.
+Creating register for signal `\MULT.\Cmult' using process `\MULT.$proc$/data/data/com.termux/files/home/symbiflow/quicklogic-arch-defs/share/techmaps/quicklogic/pp3/techmap/cells_sim.v:4781$42'.
   created direct connection (no actual register cell created).
-Creating register for signal `\Q_FRAG.\QZ' using process `\Q_FRAG.$proc$/root/symbiflow/quicklogic-arch-defs/share/techmaps/quicklogic/pp3/techmap/cells_sim.v:242$24'.
+Creating register for signal `\Q_FRAG.\QZ' using process `\Q_FRAG.$proc$/data/data/com.termux/files/home/symbiflow/quicklogic-arch-defs/share/techmaps/quicklogic/pp3/techmap/cells_sim.v:242$24'.
 Warning: Complex async reset for dff `\QZ'.
   created $dffsr cell `$procdff$893' with positive edge clock and multiple level-sensitive resets.
 
 4.4.9. Executing PROC_CLEAN pass (remove empty switches from decision trees).
-Found and cleaned up 4 empty switches in `\MULT.$proc$/root/symbiflow/quicklogic-arch-defs/share/techmaps/quicklogic/pp3/techmap/cells_sim.v:4781$42'.
-Removing empty process `MULT.$proc$/root/symbiflow/quicklogic-arch-defs/share/techmaps/quicklogic/pp3/techmap/cells_sim.v:4781$42'.
-Removing empty process `Q_FRAG.$proc$/root/symbiflow/quicklogic-arch-defs/share/techmaps/quicklogic/pp3/techmap/cells_sim.v:0$25'.
-Found and cleaned up 1 empty switch in `\Q_FRAG.$proc$/root/symbiflow/quicklogic-arch-defs/share/techmaps/quicklogic/pp3/techmap/cells_sim.v:242$24'.
-Removing empty process `Q_FRAG.$proc$/root/symbiflow/quicklogic-arch-defs/share/techmaps/quicklogic/pp3/techmap/cells_sim.v:242$24'.
-Removing empty process `helloworldfpga.$proc$/storage/emulated/0/github/vaman/sevenseg/codes/static/sevenseg_dec.v:0$3'.
+Found and cleaned up 4 empty switches in `\MULT.$proc$/data/data/com.termux/files/home/symbiflow/quicklogic-arch-defs/share/techmaps/quicklogic/pp3/techmap/cells_sim.v:4781$42'.
+Removing empty process `MULT.$proc$/data/data/com.termux/files/home/symbiflow/quicklogic-arch-defs/share/techmaps/quicklogic/pp3/techmap/cells_sim.v:4781$42'.
+Removing empty process `Q_FRAG.$proc$/data/data/com.termux/files/home/symbiflow/quicklogic-arch-defs/share/techmaps/quicklogic/pp3/techmap/cells_sim.v:0$25'.
+Found and cleaned up 1 empty switch in `\Q_FRAG.$proc$/data/data/com.termux/files/home/symbiflow/quicklogic-arch-defs/share/techmaps/quicklogic/pp3/techmap/cells_sim.v:242$24'.
+Removing empty process `Q_FRAG.$proc$/data/data/com.termux/files/home/symbiflow/quicklogic-arch-defs/share/techmaps/quicklogic/pp3/techmap/cells_sim.v:242$24'.
+Removing empty process `helloworldfpga.$proc$/sdcard/Download/vaman/vaman/fpga/sevenseg/codes/static/sevenseg_dec.v:0$3'.
 Cleaned up 5 empty switches.
 
 4.5. Executing FLATTEN pass (flatten design).
@@ -461,22 +461,22 @@ Finding unused cells or wires in module \helloworldfpga..
 
 4.27. Executing TECHMAP pass (map to technology primitives).
 
-4.27.1. Executing Verilog-2005 frontend: /share/yosys/quicklogic/pp3_brams_map.v
-Parsing Verilog input from `/share/yosys/quicklogic/pp3_brams_map.v' to AST representation.
+4.27.1. Executing Verilog-2005 frontend: /data/data/com.termux/files/home/symbiflow/bin/../share/yosys/quicklogic/pp3_brams_map.v
+Parsing Verilog input from `/data/data/com.termux/files/home/symbiflow/bin/../share/yosys/quicklogic/pp3_brams_map.v' to AST representation.
 Generating RTLIL representation for module `\$__QUICKLOGIC_RAMB16K'.
-/share/yosys/quicklogic/pp3_brams_map.v:21: Warning: Identifier `\VCC' is implicitly declared.
-/share/yosys/quicklogic/pp3_brams_map.v:22: Warning: Identifier `\GND' is implicitly declared.
+/data/data/com.termux/files/home/symbiflow/bin/../share/yosys/quicklogic/pp3_brams_map.v:21: Warning: Identifier `\VCC' is implicitly declared.
+/data/data/com.termux/files/home/symbiflow/bin/../share/yosys/quicklogic/pp3_brams_map.v:22: Warning: Identifier `\GND' is implicitly declared.
 Generating RTLIL representation for module `\$__QUICKLOGIC_RAMB8K'.
-/share/yosys/quicklogic/pp3_brams_map.v:235: Warning: Identifier `\GND' is implicitly declared.
-/share/yosys/quicklogic/pp3_brams_map.v:236: Warning: Identifier `\VCC' is implicitly declared.
+/data/data/com.termux/files/home/symbiflow/bin/../share/yosys/quicklogic/pp3_brams_map.v:235: Warning: Identifier `\GND' is implicitly declared.
+/data/data/com.termux/files/home/symbiflow/bin/../share/yosys/quicklogic/pp3_brams_map.v:236: Warning: Identifier `\VCC' is implicitly declared.
 Generating RTLIL representation for module `\RAM_8K_BLK'.
-/share/yosys/quicklogic/pp3_brams_map.v:538: Warning: Range [17:0] select out of bounds on signal `\out_reg0': Setting 2 MSB bits to undef.
+/data/data/com.termux/files/home/symbiflow/bin/../share/yosys/quicklogic/pp3_brams_map.v:538: Warning: Range [17:0] select out of bounds on signal `\out_reg0': Setting 2 MSB bits to undef.
 Generating RTLIL representation for module `\RAM_16K_BLK'.
-/share/yosys/quicklogic/pp3_brams_map.v:824: Warning: Range [35:0] select out of bounds on signal `\out_reg0': Setting 4 MSB bits to undef.
+/data/data/com.termux/files/home/symbiflow/bin/../share/yosys/quicklogic/pp3_brams_map.v:824: Warning: Range [35:0] select out of bounds on signal `\out_reg0': Setting 4 MSB bits to undef.
 Generating RTLIL representation for module `\FIFO_8K_BLK'.
-/share/yosys/quicklogic/pp3_brams_map.v:998: Warning: Range [35:0] select out of bounds on signal `\out_reg0': Setting 20 MSB bits to undef.
+/data/data/com.termux/files/home/symbiflow/bin/../share/yosys/quicklogic/pp3_brams_map.v:998: Warning: Range [35:0] select out of bounds on signal `\out_reg0': Setting 20 MSB bits to undef.
 Generating RTLIL representation for module `\FIFO_16K_BLK'.
-/share/yosys/quicklogic/pp3_brams_map.v:1249: Warning: Range [35:0] select out of bounds on signal `\out_reg0': Setting 4 MSB bits to undef.
+/data/data/com.termux/files/home/symbiflow/bin/../share/yosys/quicklogic/pp3_brams_map.v:1249: Warning: Range [35:0] select out of bounds on signal `\out_reg0': Setting 4 MSB bits to undef.
 Successfully finished Verilog frontend.
 
 4.27.2. Continuing TECHMAP pass.
@@ -535,8 +535,8 @@ Optimizing module helloworldfpga.
 
 4.31. Executing TECHMAP pass (map to technology primitives).
 
-4.31.1. Executing Verilog-2005 frontend: /share/yosys/techmap.v
-Parsing Verilog input from `/share/yosys/techmap.v' to AST representation.
+4.31.1. Executing Verilog-2005 frontend: /data/data/com.termux/files/home/symbiflow/bin/../share/yosys/techmap.v
+Parsing Verilog input from `/data/data/com.termux/files/home/symbiflow/bin/../share/yosys/techmap.v' to AST representation.
 Generating RTLIL representation for module `\_90_simplemap_bool_ops'.
 Generating RTLIL representation for module `\_90_simplemap_reduce_ops'.
 Generating RTLIL representation for module `\_90_simplemap_logic_ops'.
@@ -661,8 +661,8 @@ Transforming FF to FF+Enable cells in module helloworldfpga:
 
 4.43. Executing TECHMAP pass (map to technology primitives).
 
-4.43.1. Executing Verilog-2005 frontend: /share/yosys/quicklogic/pp3_ffs_map.v
-Parsing Verilog input from `/share/yosys/quicklogic/pp3_ffs_map.v' to AST representation.
+4.43.1. Executing Verilog-2005 frontend: /data/data/com.termux/files/home/symbiflow/bin/../share/yosys/quicklogic/pp3_ffs_map.v
+Parsing Verilog input from `/data/data/com.termux/files/home/symbiflow/bin/../share/yosys/quicklogic/pp3_ffs_map.v' to AST representation.
 Generating RTLIL representation for module `\$_DFF_N_'.
 Generating RTLIL representation for module `\$_DFF_P_'.
 Generating RTLIL representation for module `\$_DFF_NN0_'.
@@ -736,8 +736,8 @@ Optimizing module helloworldfpga.
 
 4.51. Executing TECHMAP pass (map to technology primitives).
 
-4.51.1. Executing Verilog-2005 frontend: /share/yosys/quicklogic/pp3_latches_map.v
-Parsing Verilog input from `/share/yosys/quicklogic/pp3_latches_map.v' to AST representation.
+4.51.1. Executing Verilog-2005 frontend: /data/data/com.termux/files/home/symbiflow/bin/../share/yosys/quicklogic/pp3_latches_map.v
+Parsing Verilog input from `/data/data/com.termux/files/home/symbiflow/bin/../share/yosys/quicklogic/pp3_latches_map.v' to AST representation.
 Generating RTLIL representation for module `\$_DLATCH_P_'.
 Generating RTLIL representation for module `\$_DLATCH_N_'.
 Generating RTLIL representation for module `\$_DLATCHSR_NNN_'.
@@ -762,8 +762,8 @@ Removing temp directory.
 
 4.53. Executing TECHMAP pass (map to technology primitives).
 
-4.53.1. Executing Verilog-2005 frontend: /share/yosys/quicklogic/pp3_ffs_map.v
-Parsing Verilog input from `/share/yosys/quicklogic/pp3_ffs_map.v' to AST representation.
+4.53.1. Executing Verilog-2005 frontend: /data/data/com.termux/files/home/symbiflow/bin/../share/yosys/quicklogic/pp3_ffs_map.v
+Parsing Verilog input from `/data/data/com.termux/files/home/symbiflow/bin/../share/yosys/quicklogic/pp3_ffs_map.v' to AST representation.
 Generating RTLIL representation for module `\$_DFF_N_'.
 Generating RTLIL representation for module `\$_DFF_P_'.
 Generating RTLIL representation for module `\$_DFF_NN0_'.
@@ -787,18 +787,18 @@ No more expansions possible.
 
 4.54. Executing TECHMAP pass (map to technology primitives).
 
-4.54.1. Executing Verilog-2005 frontend: /share/yosys/quicklogic/pp3_cells_map.v
-Parsing Verilog input from `/share/yosys/quicklogic/pp3_cells_map.v' to AST representation.
+4.54.1. Executing Verilog-2005 frontend: /data/data/com.termux/files/home/symbiflow/bin/../share/yosys/quicklogic/pp3_cells_map.v
+Parsing Verilog input from `/data/data/com.termux/files/home/symbiflow/bin/../share/yosys/quicklogic/pp3_cells_map.v' to AST representation.
 Generating RTLIL representation for module `\$_MUX8_'.
 Generating RTLIL representation for module `\$_MUX4_'.
 Generating RTLIL representation for module `\$_MUX_'.
 Generating RTLIL representation for module `\$_NOT_'.
 Generating RTLIL representation for module `\qlal4s3_mult_16x16_cell'.
-/share/yosys/quicklogic/pp3_cells_map.v:44: Warning: Identifier `\Valid_mult_w' is implicitly declared.
+/data/data/com.termux/files/home/symbiflow/bin/../share/yosys/quicklogic/pp3_cells_map.v:44: Warning: Identifier `\Valid_mult_w' is implicitly declared.
 Successfully finished Verilog frontend.
 
-4.54.2. Executing Verilog-2005 frontend: /share/yosys/quicklogic/pp3_lut_map.v
-Parsing Verilog input from `/share/yosys/quicklogic/pp3_lut_map.v' to AST representation.
+4.54.2. Executing Verilog-2005 frontend: /data/data/com.termux/files/home/symbiflow/bin/../share/yosys/quicklogic/pp3_lut_map.v
+Parsing Verilog input from `/data/data/com.termux/files/home/symbiflow/bin/../share/yosys/quicklogic/pp3_lut_map.v' to AST representation.
 Generating RTLIL representation for module `\$lut'.
 Successfully finished Verilog frontend.
 
@@ -879,8 +879,8 @@ found and reported 0 problems.
      logic_1                         1
      outpad                          7
 
-Loading PCF from '/storage/emulated/0/github/vaman/sevenseg/codes/static/pygmy.pcf'...
-Loading pinmap CSV from '/root/symbiflow/quicklogic-arch-defs/share/arch/ql-eos-s3_wlcsp/pinmap_PU64.csv'...
+Loading PCF from '/sdcard/Download/vaman/vaman/fpga/sevenseg/codes/static/pygmy.pcf'...
+Loading pinmap CSV from '/data/data/com.termux/files/home/symbiflow/quicklogic-arch-defs/share/arch/ql-eos-s3_wlcsp/pinmap_PU64.csv'...
 Processing cells...
   type       | net        | pad        | loc      | type     | instance
  ------------+------------+------------+----------+----------+-----------
@@ -897,8 +897,8 @@ Dumping module `\helloworldfpga'.
 
 7. Executing TECHMAP pass (map to technology primitives).
 
-7.1. Executing Verilog-2005 frontend: /root/symbiflow/quicklogic-arch-defs/share/techmaps/quicklogic/pp3/techmap/cells_map.v
-Parsing Verilog input from `/root/symbiflow/quicklogic-arch-defs/share/techmaps/quicklogic/pp3/techmap/cells_map.v' to AST representation.
+7.1. Executing Verilog-2005 frontend: /data/data/com.termux/files/home/symbiflow/quicklogic-arch-defs/share/techmaps/quicklogic/pp3/techmap/cells_map.v
+Parsing Verilog input from `/data/data/com.termux/files/home/symbiflow/quicklogic-arch-defs/share/techmaps/quicklogic/pp3/techmap/cells_map.v' to AST representation.
 Generating RTLIL representation for module `\logic_0'.
 Generating RTLIL representation for module `\logic_1'.
 Generating RTLIL representation for module `\inpad'.
@@ -939,8 +939,8 @@ No more expansions possible.
 
 8. Executing TECHMAP pass (map to technology primitives).
 
-8.1. Executing Verilog-2005 frontend: /root/symbiflow/quicklogic-arch-defs/share/techmaps/quicklogic/pp3/techmap/cells_map.v
-Parsing Verilog input from `/root/symbiflow/quicklogic-arch-defs/share/techmaps/quicklogic/pp3/techmap/cells_map.v' to AST representation.
+8.1. Executing Verilog-2005 frontend: /data/data/com.termux/files/home/symbiflow/quicklogic-arch-defs/share/techmaps/quicklogic/pp3/techmap/cells_map.v
+Parsing Verilog input from `/data/data/com.termux/files/home/symbiflow/quicklogic-arch-defs/share/techmaps/quicklogic/pp3/techmap/cells_map.v' to AST representation.
 Generating RTLIL representation for module `\logic_0'.
 Generating RTLIL representation for module `\logic_1'.
 Generating RTLIL representation for module `\inpad'.
@@ -986,8 +986,8 @@ No more expansions possible.
 
 9. Executing TECHMAP pass (map to technology primitives).
 
-9.1. Executing Verilog-2005 frontend: /root/symbiflow/quicklogic-arch-defs/bin/../share/arch/ql-eos-s3_wlcsp/cells/ram_map.v
-Parsing Verilog input from `/root/symbiflow/quicklogic-arch-defs/bin/../share/arch/ql-eos-s3_wlcsp/cells/ram_map.v' to AST representation.
+9.1. Executing Verilog-2005 frontend: /data/data/com.termux/files/home/symbiflow/quicklogic-arch-defs/bin/../share/arch/ql-eos-s3_wlcsp/cells/ram_map.v
+Parsing Verilog input from `/data/data/com.termux/files/home/symbiflow/quicklogic-arch-defs/bin/../share/arch/ql-eos-s3_wlcsp/cells/ram_map.v' to AST representation.
 Generating RTLIL representation for module `\ram8k_2x1_cell_macro'.
 Successfully finished Verilog frontend.
 
@@ -1024,6 +1024,6 @@ Removed 0 unused cells and 18 unused wires.
 Dumping module `\helloworldfpga'.
 
 Warnings: 8 unique messages, 11 total
-End of script. Logfile hash: c5e67e0320, CPU: user 2.31s system 0.12s, MEM: 220.36 MB peak
-Yosys 0.9+2406 (git sha1 ca763e6d, gcc 9.3.0-17ubuntu1~20.04 -fPIC -Os)
-Time spent: 68% 18x read_verilog (1 sec), 8% 21x opt_clean (0 sec), ...
+End of script. Logfile hash: 2012930897, CPU: user 6.28s system 0.31s, MEM: 258.68 MB peak
+Yosys 0.9+2406 (git sha1 ca763e6d5, gcc 10.2.1-6 -fPIC -Os)
+Time spent: 67% 18x read_verilog (4 sec), 8% 21x opt_clean (0 sec), ...

@@ -1,0 +1,12 @@
+set_io A	3
+set_io B        64 	
+set_io C	62
+set_io D	63
+set_io clock1   61
+set_io W	27
+set_io X	33
+
+
+
+
+

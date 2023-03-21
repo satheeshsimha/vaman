@@ -1,8 +1,8 @@
 VPR FPGA Placement and Routing.
 Version: 8.1.0-dev+dadca7ecf
-Revision: v8.0.0-rc2-2894-gdadca7ecf
-Compiled: 2021-01-14T13:13:16
-Compiler: GNU 9.3.0 on Linux-5.4.0-faked aarch64
+Revision: v8.0.0-rc2-2909-gdadca7ecf
+Compiled: 2023-03-16T05:56:59
+Compiler: GNU 10.2.1 on Linux-5.4.0-faked aarch64
 Build Info: release IPO VTR_ASSERT_LEVEL=2
 
 University of Toronto
@@ -11,18 +11,18 @@ vtr-users@googlegroups.com
 This is free open source code under MIT license.
 
 VPR was run with the following command-line:
-vpr /root/symbiflow/quicklogic-arch-defs/share/arch/ql-eos-s3_wlcsp/arch.timing.xml helloworldfpga.eblif --device ql-eos-s3 --max_router_iterations 500 --routing_failure_predictor off --router_high_fanout_threshold -1 --constant_net_method route --route_chan_width 100 --clock_modeling route --place_delay_model delta_override --router_lookahead map --check_route quick --strict_checks off --allow_dangling_combinational_nodes on --disable_errors check_unbuffered_edges:check_route --congested_routing_iteration_threshold 0.8 --incremental_reroute_delay_ripup off --base_cost_type delay_normalized_length_bounded --bb_factor 10 --initial_pres_fac 4.0 --check_rr_graph off --suppress_warnings ,sum_pin_class:check_unbuffered_edges:load_rr_indexed_data_T_values:check_rr_node:trans_per_R:check_route:set_rr_graph_tool_comment:warn_model_missing_timing --read_rr_graph /root/symbiflow/quicklogic-arch-defs/share/arch/ql-eos-s3_wlcsp/rr_graph_ql-eos-s3_wlcsp.rr_graph.real.bin --read_placement_delay_lookup /root/symbiflow/quicklogic-arch-defs/share/arch/ql-eos-s3_wlcsp/rr_graph_ql-eos-s3_wlcsp.place_delay.bin --sdc_file /storage/emulated/0/github/vaman/sevenseg/codes/loop/build/helloworldfpga_dummy.sdc --pack
+vpr /data/data/com.termux/files/home/symbiflow/quicklogic-arch-defs/share/arch/ql-eos-s3_wlcsp/arch.timing.xml decade_counter.eblif --device ql-eos-s3 --max_router_iterations 500 --routing_failure_predictor off --router_high_fanout_threshold -1 --constant_net_method route --route_chan_width 100 --clock_modeling route --place_delay_model delta_override --router_lookahead map --check_route quick --strict_checks off --allow_dangling_combinational_nodes on --disable_errors check_unbuffered_edges:check_route --congested_routing_iteration_threshold 0.8 --incremental_reroute_delay_ripup off --base_cost_type delay_normalized_length_bounded --bb_factor 10 --initial_pres_fac 4.0 --check_rr_graph off --suppress_warnings ,sum_pin_class:check_unbuffered_edges:load_rr_indexed_data_T_values:check_rr_node:trans_per_R:check_route:set_rr_graph_tool_comment:warn_model_missing_timing --read_rr_graph /data/data/com.termux/files/home/symbiflow/quicklogic-arch-defs/share/arch/ql-eos-s3_wlcsp/rr_graph_ql-eos-s3_wlcsp.rr_graph.real.bin --read_placement_delay_lookup /data/data/com.termux/files/home/symbiflow/quicklogic-arch-defs/share/arch/ql-eos-s3_wlcsp/rr_graph_ql-eos-s3_wlcsp.place_delay.bin --sdc_file /sdcard/Download/vaman/vaman/fpga/sevenseg/codes/loop/build/decade_counter_dummy.sdc --pack
 
 
-Architecture file: /root/symbiflow/quicklogic-arch-defs/share/arch/ql-eos-s3_wlcsp/arch.timing.xml
-Circuit name: helloworldfpga
+Architecture file: /data/data/com.termux/files/home/symbiflow/quicklogic-arch-defs/share/arch/ql-eos-s3_wlcsp/arch.timing.xml
+Circuit name: decade_counter
 
 # Loading Architecture Description
-# Loading Architecture Description took 0.42 seconds (max_rss 26.9 MiB, delta_rss +23.7 MiB)
+# Loading Architecture Description took 0.98 seconds (max_rss 27.0 MiB, delta_rss +23.1 MiB)
 # Building complex block graph
-# Building complex block graph took 0.09 seconds (max_rss 33.7 MiB, delta_rss +6.7 MiB)
+# Building complex block graph took 0.30 seconds (max_rss 33.8 MiB, delta_rss +6.8 MiB)
 # Load circuit
-# Load circuit took 0.01 seconds (max_rss 35.5 MiB, delta_rss +1.9 MiB)
+# Load circuit took 0.04 seconds (max_rss 35.9 MiB, delta_rss +2.1 MiB)
 # Clean circuit
 Absorbed 1144 LUT buffers
 Inferred  106 additional primitive pins as constant generators since they have no combinationally connected inputs
@@ -36,11 +36,11 @@ Swept output(s)     : 0 (0 dangling, 0 constant)
 Swept net(s)        : 141
 Swept block(s)      : 1
 Constant Pins Marked: 150
-# Clean circuit took 0.01 seconds (max_rss 36.6 MiB, delta_rss +1.0 MiB)
+# Clean circuit took 0.02 seconds (max_rss 36.7 MiB, delta_rss +0.8 MiB)
 # Compress circuit
-# Compress circuit took 0.00 seconds (max_rss 36.6 MiB, delta_rss +0.0 MiB)
+# Compress circuit took 0.00 seconds (max_rss 36.7 MiB, delta_rss +0.0 MiB)
 # Verify circuit
-# Verify circuit took 0.00 seconds (max_rss 36.6 MiB, delta_rss +0.0 MiB)
+# Verify circuit took 0.00 seconds (max_rss 36.7 MiB, delta_rss +0.0 MiB)
 Circuit Statistics:
   Blocks: 156
     .output   :       7
@@ -61,24 +61,24 @@ Circuit Statistics:
   Timing Graph Nodes: 1427
   Timing Graph Edges: 2311
   Timing Graph Levels: 28
-# Build Timing Graph took 0.00 seconds (max_rss 36.6 MiB, delta_rss +0.0 MiB)
+# Build Timing Graph took 0.00 seconds (max_rss 36.7 MiB, delta_rss +0.0 MiB)
 Netlist contains 1 clocks
   Netlist Clock 'clk' Fanout: 35 pins (2.5%), 35 blocks (22.4%)
 # Load Timing Constraints
 
-SDC file '/storage/emulated/0/github/vaman/sevenseg/codes/loop/build/helloworldfpga_dummy.sdc' contained no SDC commands
+SDC file '/sdcard/Download/vaman/vaman/fpga/sevenseg/codes/loop/build/decade_counter_dummy.sdc' contained no SDC commands
 Setting default timing constraints:
    * constrain all primay inputs and primary outputs on netlist clock 'clk'
    * optimize netlist clock to run as fast as possible
 Timing constraints created 1 clocks
   Constrained Clock 'clk' Source: 'u_qlal4s3b_cell_macro.Sys_Clk0[0]'
 
-# Load Timing Constraints took 0.00 seconds (max_rss 36.6 MiB, delta_rss +0.0 MiB)
+# Load Timing Constraints took 0.00 seconds (max_rss 36.7 MiB, delta_rss +0.0 MiB)
 Timing analysis: ON
-Circuit netlist file: helloworldfpga.net
-Circuit placement file: helloworldfpga.place
-Circuit routing file: helloworldfpga.route
-Circuit SDC file: /storage/emulated/0/github/vaman/sevenseg/codes/loop/build/helloworldfpga_dummy.sdc
+Circuit netlist file: decade_counter.net
+Circuit placement file: decade_counter.place
+Circuit routing file: decade_counter.route
+Circuit SDC file: /sdcard/Download/vaman/vaman/fpga/sevenseg/codes/loop/build/decade_counter_dummy.sdc
 
 Packer: ENABLED
 Placer: DISABLED
@@ -109,7 +109,7 @@ RoutingArch.switch_block_type: WILTON
 RoutingArch.Fs: 3
 
 # Packing
-Begin packing 'helloworldfpga.eblif'.
+Begin packing 'decade_counter.eblif'.
 Warning 1: All 2 clocks will be treated as global.
 
 After removing unused inputs...
@@ -210,11 +210,11 @@ Complex block 71: '$true' (PB-SYN_VCC) .
 	PB-SYN_GND: # blocks: 1, average # input + clock pins used: 0, average # output pins used: 1
 	PB-ASSP: # blocks: 1, average # input + clock pins used: 161, average # output pins used: 1
 Absorbed logical nets 36 out of 149 nets, 113 nets not absorbed.
-Incr Slack updates 1 in 2.4687e-05 sec
-Full Max Req/Worst Slack updates 1 in 5.989e-06 sec
+Incr Slack updates 1 in 4.1094e-05 sec
+Full Max Req/Worst Slack updates 1 in 1.2344e-05 sec
 Incr Max Req/Worst Slack updates 0 in 0 sec
 Incr Criticality updates 0 in 0 sec
-Full Criticality updates 1 in 2.5469e-05 sec
+Full Criticality updates 1 in 5.4323e-05 sec
 FPGA sized to 39 x 35 (ql-eos-s3)
 Device Utilization: 0.05 (target 1.00)
 	Block Utilization: 0.07 Type: PB-LOGIC
@@ -226,13 +226,13 @@ Device Utilization: 0.05 (target 1.00)
 
 Netlist conversion complete.
 
-# Packing took 0.06 seconds (max_rss 37.1 MiB, delta_rss +0.5 MiB)
+# Packing took 0.22 seconds (max_rss 37.3 MiB, delta_rss +0.6 MiB)
 # Load Packing
 Begin loading packed FPGA netlist file.
-Netlist generated from file 'helloworldfpga.net'.
+Netlist generated from file 'decade_counter.net'.
 Detected 2 constant generators (to see names run with higher pack verbosity)
-Finished loading packed FPGA netlist file (took 0.031706 seconds).
-# Load Packing took 0.03 seconds (max_rss 37.7 MiB, delta_rss +0.7 MiB)
+Finished loading packed FPGA netlist file (took 0.093394 seconds).
+# Load Packing took 0.11 seconds (max_rss 38.1 MiB, delta_rss +0.8 MiB)
 Warning 8: Netlist contains 0 global net to non-global architecture pin connections
 Warning 9: Logic block #70 ($false) has only 1 output pin '$false.GND0_GND[0]'. It may be a constant generator.
 Warning 10: Logic block #71 ($true) has only 1 output pin '$true.VCC0_VCC[0]'. It may be a constant generator.
@@ -350,16 +350,16 @@ Device Utilization: 0.05 (target 1.00)
 	Physical Tile TL-SYN_GND:
 	Block Utilization: 1.00 Logical Block: PB-SYN_GND
 
-## Build Device Grid took 0.01 seconds (max_rss 37.8 MiB, delta_rss +0.0 MiB)
+## Build Device Grid took 0.02 seconds (max_rss 38.2 MiB, delta_rss +0.0 MiB)
 ## Loading routing resource graph
 
 
-## Loading routing resource graph took 0.56 seconds (max_rss 344.1 MiB, delta_rss +306.3 MiB)
+## Loading routing resource graph took 1.70 seconds (max_rss 344.7 MiB, delta_rss +306.4 MiB)
   RR Graph Nodes: 1396446
   RR Graph Edges: 2337988
-# Create Device took 1.76 seconds (max_rss 391.8 MiB, delta_rss +354.0 MiB)
+# Create Device took 5.51 seconds (max_rss 392.2 MiB, delta_rss +354.0 MiB)
 
 
-Flow timing analysis took 0.000355312 seconds (0.000288489 STA, 6.6823e-05 slack) (1 full updates: 1 setup, 0 hold, 0 combined).
+Flow timing analysis took 0.000846146 seconds (0.000714167 STA, 0.000131979 slack) (1 full updates: 1 setup, 0 hold, 0 combined).
 VPR succeeded
-The entire flow of VPR took 2.41 seconds (max_rss 391.8 MiB)
+The entire flow of VPR took 7.32 seconds (max_rss 392.2 MiB)
